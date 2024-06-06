@@ -37,4 +37,15 @@ podemos combinarlos de acuerdo a la necesidad que tengamos
 
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
+**NOTA: para configurar mis driver debo descargarlos y ponerlos enla ruta script the python**
+
+**tips -> para ahorrar tiempo a la hora de copiar mis locator puedo hacer los siguiente**
+
+me voy a la ruta
+-> window -> configuraciones -> sistema -> porta papeles -> boton activar
+-> window -> setting -> system -> clipboard history -> turn on
+- cuando ya este activo, nos vamos a nuestra pagina web y copiamos de forma seguida nuestros locator
+- cuando ya esten todos copiados, entonces nos vamos a nuestro id y cuando los queramos pegar uno por uno
+- utilizamos las teclas WIN + V
+
 
