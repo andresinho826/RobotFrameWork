@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-05T23:11:46.571573" rpa="false" schemaversion="5">
+<suite id="s1" name="Variables" source="C:\Users\af.castillo\PycharmProjects\udemyProject\Tests\Variables.robot">
+<test id="s1-t1" name="Demo uno" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.890731" level="INFO">mi nombre es = andres= castillo= moreno</msg>
+<arg>mi nombre es ${nombre}${apellido}${segundo}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.890731" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.891676" level="INFO">${direccion} = nueva direccion</msg>
+<var>${direccion}</var>
+<arg>nueva direccion</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.890731" elapsed="0.000945"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${direccion}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.891676" elapsed="0.000000"/>
+</kw>
+<doc>Pruebas de nuestras primeras variables</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2024-06-05T23:11:46.889638" elapsed="0.003010"/>
+</test>
+<test id="s1-t2" name="Demo Dos" line="22">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.893747" level="INFO">mi nombre es = andres = castillo = moreno</msg>
+<arg>mi nombre es ${nombre} ${apellido} ${segundo}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.893747" elapsed="0.000000"/>
+</kw>
+<doc>Pruebas de segundas variables</doc>
+<tag>test_dos</tag>
+<status status="PASS" start="2024-06-05T23:11:46.893747" elapsed="0.001108"/>
+</test>
+<test id="s1-t3" name="Demo Tres" line="27">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.896758" level="INFO">mi nombre es = andres = castillo = moreno</msg>
+<arg>mi nombre es ${nombre} ${apellido} ${segundo}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.895807" elapsed="0.000951"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.896758" level="INFO">${a} = 20</msg>
+<var>${a}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.896758" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.896758" level="INFO">${b} = 30</msg>
+<var>${b}</var>
+<arg>30</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.896758" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.896758" level="INFO">${suma} = 50</msg>
+<var>${suma}</var>
+<arg>${a}+${b}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.896758" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-05T23:11:46.897846" level="INFO">${multi} = 600</msg>
+<var>${multi}</var>
+<arg>${a}*${b}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.897846" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.897846" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${b}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.897846" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${suma}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.898758" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${multi}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T23:11:46.898758" elapsed="0.000000"/>
+</kw>
+<doc>Pruebas de terceras variables</doc>
+<tag>test_tres</tag>
+<status status="PASS" start="2024-06-05T23:11:46.895807" elapsed="0.002951"/>
+</test>
+<doc>Demo de las Varibles</doc>
+<status status="PASS" start="2024-06-05T23:11:46.574569" elapsed="0.324189"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test_dos</stat>
+<stat pass="1" fail="0" skip="0">test_tres</stat>
+<stat pass="1" fail="0" skip="0">test_uno</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Variables">Variables</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-05T23:11:46.562517" level="ERROR">Error in file 'C:\Users\af.castillo\PycharmProjects\udemyProject\Tests\Variables.robot' on line 4: Setting 'Documentation' is allowed only once. Only the first value is used.</msg>
+</errors>
+</robot>
