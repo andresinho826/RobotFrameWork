@@ -2,6 +2,7 @@ Here, I will share all the information related to the project, tips, and more. t
 
 
 ---------------------------------------------------------------------------------------------
+05-june-2024
 ---------------------------------------------------------------------------------------------
 
 -> **COMMANDS COURSE ROBOTFRAMEWORK** -> Rodrigo Villanueva
@@ -68,5 +69,15 @@ me voy a la ruta
 **Generar reporte en un folder en especifico**
 
 robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
+
+---------------------------------------------------------------------------------------------
+06 - june - 2024
+---------------------------------------------------------------------------------------------
+
+- practica dos
+- validando titulo
+- validando visible enable
+- validando por atributo
+- element should not be enable
 
 
