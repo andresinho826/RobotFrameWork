@@ -101,8 +101,22 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
   - nos permite seleccionar por label, index, value
     - tomamos el id del select
   - y la siguiente es la etiqueta a la cual vamos a disparar
+  - 
+  **set selenium speed**
+    - configurar el timpo de todas nuestras funciones
+    - ejemplo 1= set selenium speed    1s
+    -  ejemplo 2= set selenium speed    1    second
+ 
+    **set selenium timeout**
+    - funcion para la espera de los elementos
+    - espera el tiempo configurado a nuestros elementos
+    - ejemplo = set selenium timeout    15
  
     **NOTA: no olvidar utilizar validaciones**
     -element should be enabled or visible
+
+    **set selenium implicitywait**
+    - enviamos un valor el cual obliga al sistema a esperar nuestros elementos antes de cargarde en la pagina
+    - si lo encuentra antes qeu se cumplo el tiempo configurado, sigue su ejecucion.
   
 
