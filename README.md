@@ -89,4 +89,20 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
 - Escribimos select radio button, luego el name del boton y por ultimo el value ( puede ser el ID tambien)
 - tambien se puede mapear directamente con el click button y con su xpath locator
 
+---------------------------------------------------------------------------------------------
+07 - june - 2024
+---------------------------------------------------------------------------------------------
+
+**checkbot**
+- Escribimos select checkbox button, luego el name del boton y por ultimo el value ( puede ser el ID tambien)
+- tambien se puede mapear directamente con el click button y con su xpath locator
+
+  **selectore -> comboBox**
+  - nos permite seleccionar por label, index, value
+    - tomamos el id del select
+  - y la siguiente es la etiqueta a la cual vamos a disparar
+ 
+    **NOTA: no olvidar utilizar validaciones**
+    -element should be enabled or visible
+  
 
