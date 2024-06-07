@@ -118,5 +118,7 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
     **set selenium implicitywait**
     - enviamos un valor el cual obliga al sistema a esperar nuestros elementos antes de cargarde en la pagina
     - si lo encuentra antes qeu se cumplo el tiempo configurado, sigue su ejecucion.
-  
+
+  robot -d ..\reportes_radio_button -i test_tres .\Radio_button.robot
+
 
