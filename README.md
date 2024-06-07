@@ -79,5 +79,9 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
 - validando visible enable
 - validando por atributo
 - element should not be enable
+- -mejorando tiempos
+- correr solamente por tal ( despues de la **-i** escribimos el nombre del tag que queremos correr ( o los que queremos correr)
+- ejemplo = robot -d ..\reporte -i nombre_tag -\nombre_clase.robot
+- 
 
 
