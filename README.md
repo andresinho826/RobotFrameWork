@@ -119,6 +119,10 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
     - enviamos un valor el cual obliga al sistema a esperar nuestros elementos antes de cargarde en la pagina
     - si lo encuentra antes qeu se cumplo el tiempo configurado, sigue su ejecucion.
 
+  # ejecutanto con el tag test_tres
   robot -d ..\reportes_radio_button -i test_tres .\Radio_button.robot
+  
+  # ejecutando sin tag
+  robot -d ..\reportes_radio_button -i .\Radio_button.robot
 
 
