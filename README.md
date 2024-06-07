@@ -82,6 +82,11 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
 - -mejorando tiempos
 - correr solamente por tal ( despues de la **-i** escribimos el nombre del tag que queremos correr ( o los que queremos correr)
 - ejemplo = robot -d ..\reporte -i nombre_tag -\nombre_clase.robot
-- 
+
+
+**RADIO BUTTON**
+
+- Escribimos select radio button, luego el name del boton y por ultimo el value ( puede ser el ID tambien)
+- tambien se puede mapear directamente con el click button y con su xpath locator
 
 
