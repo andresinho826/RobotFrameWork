@@ -126,3 +126,10 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
   robot -d ..\reportes_radio_button -i .\Radio_button.robot
 
 
+---------------------------------------------------------------------------------------------
+11 - june - 2024
+---------------------------------------------------------------------------------------------
+ - actualimos nuestro file base.robot
+ - vamos a hacer el ejemplo de la pagina form = 
+ - https://qa-automation-practice.netlify.app/register
+ - utilizamos los wait para validar contenido dentro de la pagina
