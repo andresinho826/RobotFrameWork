@@ -127,9 +127,28 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
 
 
 ---------------------------------------------------------------------------------------------
-11 - june - 2024
+10 - june - 2024
 ---------------------------------------------------------------------------------------------
  - actualimos nuestro file base.robot
  - vamos a hacer el ejemplo de la pagina form = 
  - https://qa-automation-practice.netlify.app/register
  - utilizamos los wait para validar contenido dentro de la pagina
+
+
+---------------------------------------------------------------------------------------------
+11 - june - 2024
+---------------------------------------------------------------------------------------------
+
+* manipular alert with robotframework
+  * handle alert  accept
+* manipular iframe
+  * -> seleccionar el frame: select frame
+  * -> seleccionar las accciones a realizar : mapear los campos, dar click, ingresar text, etc
+  * -> siempre cerrar el frame: unselected frame
+
+
+* construimos todas la validaciones de login en la pagina Orange HR
+* ejecutar todas las pruebas de con un filto
+* (ingresamos a la ruta) robot vali*.robot -> ejecuta todas las que empiezan con **vali**
+* con este comando lanzamos todas las pruebas dentro de nuestra carpeta tests -> robot *.robot
+* NOTA: hace la ejecucion en orden alfabetico.
