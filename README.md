@@ -152,3 +152,17 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
 * (ingresamos a la ruta) robot vali*.robot -> ejecuta todas las que empiezan con **vali**
 * con este comando lanzamos todas las pruebas dentro de nuestra carpeta tests -> robot *.robot
 * NOTA: hace la ejecucion en orden alfabetico.
+
+
+
+
+---------------------------------------------------------------------------------------------
+12 - june - 2024
+---------------------------------------------------------------------------------------------
+
+
+-> hoy aprendimos sobre los siguientes temas
+- switch to, para intercambiar de browser
+- go to, para intercambiar tambien de brower
+- go back, para retornar al browser previo
+- ***keywords***, que en pocas palabras se utiliza de forma igual que una funcion y luego los llamamos en los ***test cases***
