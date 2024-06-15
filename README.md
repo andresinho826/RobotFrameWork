@@ -166,3 +166,15 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
 - go to, para intercambiar tambien de brower
 - go back, para retornar al browser previo
 - ***keywords***, que en pocas palabras se utiliza de forma igual que una funcion y luego los llamamos en los ***test cases***
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+13-14 - june - 2024
+---------------------------------------------------------------------------------------------
+
+-> keywords
+* realizando ejercicios con respecto a keywords , separar en diferentes directorios dentro de la carpeta resources
+* validando las mejores practicas para que cada vez el codigo sea mas legible y mantenible.

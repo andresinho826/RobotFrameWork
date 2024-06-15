@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-14T20:16:31.719512" rpa="false" schemaversion="5">
+<suite id="s1" name="Keyword 01" source="C:\Users\af.castillo\PycharmProjects\udemyProject\Tests_case2\Keyword_01.robot">
+<test id="s1-t1" name="Demo keywords" line="12">
+<kw name="configuracion inicial">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:32.080858" level="INFO">Opening browser 'chrome' to base url 'https://qa-automation-practice.netlify.app/register'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-14T20:16:32.080858" elapsed="3.457027"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-14T20:16:35.537885" elapsed="0.032471"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:35.570356" level="INFO">Page title is 'QA Practice | Learn with RV'.</msg>
+<arg>QA Practice | Learn with RV</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.4s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register Form</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.421471"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(text(), 'Register Form')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-14T20:16:35.991827" elapsed="0.428893"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Pruebas para el uso de los keywords</doc>
+<status status="PASS" start="2024-06-14T20:16:32.080858" elapsed="4.339862"/>
+</kw>
+<kw name="llenando datos primarios">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:36.420720" level="INFO">Typing text 'Andres' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>Andres</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-14T20:16:36.420720" elapsed="1.365418"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:37.786138" level="INFO">Typing text 'Castillo' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>Castillo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-14T20:16:37.786138" elapsed="1.319310"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:39.105448" level="INFO">Typing text '123456789' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-14T20:16:39.105448" elapsed="1.324687"/>
+</kw>
+<status status="PASS" start="2024-06-14T20:16:36.420720" elapsed="4.009415"/>
+</kw>
+<kw name="llenando datos secundarios">
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:40.432055" level="INFO">Selecting options from selection list 'id=countries_dropdown_menu' by index 10.</msg>
+<arg>id=countries_dropdown_menu</arg>
+<arg>10</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-06-14T20:16:40.432055" elapsed="7.921321"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:48.353376" level="INFO">Typing text 'andres@hotmail.com' into text field 'id=emailAddress'.</msg>
+<arg>id=emailAddress</arg>
+<arg>andres@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-14T20:16:48.353376" elapsed="1.373702"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:49.727078" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-06-14T20:16:50.583855" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>123456789</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-14T20:16:49.727078" elapsed="1.319941"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:51.048137" level="INFO">Clicking button 'id=exampleCheck1'.</msg>
+<arg>id=exampleCheck1</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-14T20:16:51.047019" elapsed="1.282819"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-14T20:16:52.329838" level="INFO">Clicking button 'id=registerBtn'.</msg>
+<arg>id=registerBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-14T20:16:52.329838" elapsed="2.132156"/>
+</kw>
+<status status="PASS" start="2024-06-14T20:16:40.431215" elapsed="14.030779"/>
+</kw>
+<kw name="usuario creado">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>The account has been successfully created!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-14T20:16:54.464063" elapsed="0.430660"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=message</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-14T20:16:54.894723" elapsed="0.427242"/>
+</kw>
+<status status="PASS" start="2024-06-14T20:16:54.463020" elapsed="0.858945"/>
+</kw>
+<kw name="cerrando navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-14T20:16:55.324018" elapsed="2.596866"/>
+</kw>
+<status status="PASS" start="2024-06-14T20:16:55.324018" elapsed="2.596866"/>
+</kw>
+<status status="PASS" start="2024-06-14T20:16:32.080858" elapsed="25.841015"/>
+</test>
+<doc>Demo de las Varibles</doc>
+<status status="PASS" start="2024-06-14T20:16:31.719512" elapsed="26.205359"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Keyword 01">Keyword 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
