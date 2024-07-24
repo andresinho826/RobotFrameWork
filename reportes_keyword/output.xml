@@ -1,145 +1,708 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-14T20:16:31.719512" rpa="false" schemaversion="5">
-<suite id="s1" name="Keyword 01" source="C:\Users\af.castillo\PycharmProjects\udemyProject\Tests_case2\Keyword_01.robot">
-<test id="s1-t1" name="Demo keywords" line="12">
-<kw name="configuracion inicial">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-23T21:13:11.178928" rpa="false" schemaversion="5">
+<suite id="s1" name="Excel1" source="C:\repo\RobotFrameWork\Tests_case2\Excel1.robot">
+<test id="s1-t1" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:32.080858" level="INFO">Opening browser 'chrome' to base url 'https://qa-automation-practice.netlify.app/register'.</msg>
+<msg time="2024-07-23T21:13:12.870499" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-14T20:16:32.080858" elapsed="3.457027"/>
+<status status="PASS" start="2024-07-23T21:13:12.870499" elapsed="11.576629"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-14T20:16:35.537885" elapsed="0.032471"/>
+<status status="PASS" start="2024-07-23T21:13:24.448211" elapsed="0.048775"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:35.570356" level="INFO">Page title is 'QA Practice | Learn with RV'.</msg>
-<arg>QA Practice | Learn with RV</arg>
+<msg time="2024-07-23T21:13:24.514038" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-23T21:13:24.496986" elapsed="0.017052"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>10</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-23T21:13:24.514038" elapsed="0.001998"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>.4s</arg>
+<arg>.1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Register Form</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-14T20:16:35.570356" elapsed="0.421471"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath=//*[contains(text(), 'Register Form')]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-14T20:16:35.991827" elapsed="0.428893"/>
+<status status="PASS" start="2024-07-23T21:13:24.516036" elapsed="0.001001"/>
 </kw>
 <tag>test_uno</tag>
-<doc>Pruebas para el uso de los keywords</doc>
-<status status="PASS" start="2024-06-14T20:16:32.080858" elapsed="4.339862"/>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:13:12.870499" elapsed="11.646538"/>
 </kw>
-<kw name="llenando datos primarios">
+<kw name="Conectar Excel">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:36.420720" level="INFO">Typing text 'Andres' into text field 'id=firstName'.</msg>
-<arg>id=firstName</arg>
-<arg>Andres</arg>
+<msg time="2024-07-23T21:13:24.518689" level="INFO">Typing text 'name001' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T20:16:36.420720" elapsed="1.365418"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:37.786138" level="INFO">Typing text 'Castillo' into text field 'id=lastName'.</msg>
-<arg>id=lastName</arg>
-<arg>Castillo</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T20:16:37.786138" elapsed="1.319310"/>
+<status status="PASS" start="2024-07-23T21:13:24.518034" elapsed="0.480200"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:39.105448" level="INFO">Typing text '123456789' into text field 'id=phone'.</msg>
-<arg>id=phone</arg>
-<arg>123456789</arg>
+<msg time="2024-07-23T21:13:24.998781" level="INFO">Typing text 'email001@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T20:16:39.105448" elapsed="1.324687"/>
+<status status="PASS" start="2024-07-23T21:13:24.998781" elapsed="0.525394"/>
 </kw>
-<status status="PASS" start="2024-06-14T20:16:36.420720" elapsed="4.009415"/>
+<arg>name=name001</arg>
+<arg>email=email001@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:13:24.517037" elapsed="1.007138"/>
 </kw>
-<kw name="llenando datos secundarios">
-<kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:40.432055" level="INFO">Selecting options from selection list 'id=countries_dropdown_menu' by index 10.</msg>
-<arg>id=countries_dropdown_menu</arg>
-<arg>10</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2024-06-14T20:16:40.432055" elapsed="7.921321"/>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:13:26.526184" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:13:25.525661" elapsed="1.000523"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:48.353376" level="INFO">Typing text 'andres@hotmail.com' into text field 'id=emailAddress'.</msg>
-<arg>id=emailAddress</arg>
-<arg>andres@hotmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T20:16:48.353376" elapsed="1.373702"/>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:13:26.526184" elapsed="2.898521"/>
 </kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:49.727078" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2024-06-14T20:16:50.583855" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>id=password</arg>
-<arg>123456789</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T20:16:49.727078" elapsed="1.319941"/>
+<status status="PASS" start="2024-07-23T21:13:25.524175" elapsed="3.900530"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:51.048137" level="INFO">Clicking button 'id=exampleCheck1'.</msg>
-<arg>id=exampleCheck1</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T20:16:51.047019" elapsed="1.282819"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-14T20:16:52.329838" level="INFO">Clicking button 'id=registerBtn'.</msg>
-<arg>id=registerBtn</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T20:16:52.329838" elapsed="2.132156"/>
-</kw>
-<status status="PASS" start="2024-06-14T20:16:40.431215" elapsed="14.030779"/>
-</kw>
-<kw name="usuario creado">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>The account has been successfully created!</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-14T20:16:54.464063" elapsed="0.430660"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>id=message</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-14T20:16:54.894723" elapsed="0.427242"/>
-</kw>
-<status status="PASS" start="2024-06-14T20:16:54.463020" elapsed="0.858945"/>
-</kw>
-<kw name="cerrando navegador">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-14T20:16:55.324018" elapsed="2.596866"/>
-</kw>
-<status status="PASS" start="2024-06-14T20:16:55.324018" elapsed="2.596866"/>
-</kw>
-<status status="PASS" start="2024-06-14T20:16:32.080858" elapsed="25.841015"/>
+<status status="PASS" start="2024-07-23T21:13:12.870499" elapsed="16.554206"/>
 </test>
-<doc>Demo de las Varibles</doc>
-<status status="PASS" start="2024-06-14T20:16:31.719512" elapsed="26.205359"/>
+<test id="s1-t2" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:13:29.430860" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:13:29.430860" elapsed="13.931285"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:13:43.362145" elapsed="0.147036"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:13:43.627585" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:13:43.509181" elapsed="0.118404"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:13:43.628212" elapsed="0.103687"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:13:43.731899" elapsed="0.001024"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:13:29.430860" elapsed="14.302063"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:13:43.734931" level="INFO">Typing text 'name002' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:13:43.734931" elapsed="0.473729"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:13:44.208660" level="INFO">Typing text 'email002@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:13:44.208660" elapsed="0.526183"/>
+</kw>
+<arg>name=name002</arg>
+<arg>email=email002@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:13:43.733823" elapsed="1.001020"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:13:45.737446" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:13:44.735857" elapsed="1.001589"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:13:45.738076" elapsed="2.482396"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:13:44.735857" elapsed="3.484615"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:13:29.430860" elapsed="18.789612"/>
+</test>
+<test id="s1-t3" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:13:48.228682" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:13:48.228682" elapsed="12.985072"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:14:01.213754" elapsed="0.171643"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:01.497728" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:14:01.385827" elapsed="0.111901"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:14:01.498326" elapsed="0.103243"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:14:01.601569" elapsed="0.000949"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:13:48.228682" elapsed="13.373836"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:01.603712" level="INFO">Typing text 'name003' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:14:01.603712" elapsed="0.552836"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:02.156548" level="INFO">Typing text 'email003@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:14:02.156548" elapsed="0.656160"/>
+</kw>
+<arg>name=name003</arg>
+<arg>email=email003@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:14:01.603712" elapsed="1.208996"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:14:03.813251" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:14:02.812708" elapsed="1.000543"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:14:03.813251" elapsed="2.822048"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:14:02.812708" elapsed="3.822591"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:13:48.220472" elapsed="18.414827"/>
+</test>
+<test id="s1-t4" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:06.640192" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:14:06.640192" elapsed="13.511149"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:14:20.151341" elapsed="0.143083"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:20.413501" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:14:20.294424" elapsed="0.119077"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:14:20.413501" elapsed="0.103813"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:14:20.518063" elapsed="0.000513"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:14:06.640192" elapsed="13.878384"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:20.521901" level="INFO">Typing text 'name004' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:14:20.520862" elapsed="4.532461"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:25.054185" level="INFO">Typing text 'email004@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:14:25.053848" elapsed="0.521921"/>
+</kw>
+<arg>name=name004</arg>
+<arg>email=email004@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:14:20.519846" elapsed="5.055923"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:14:26.576108" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:14:25.575769" elapsed="1.000339"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:14:26.576108" elapsed="3.004084"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:14:25.575769" elapsed="4.004423"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:14:06.640192" elapsed="22.940000"/>
+</test>
+<test id="s1-t5" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:29.588889" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:14:29.588889" elapsed="13.056079"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:14:42.645779" elapsed="0.149881"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:42.913854" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:14:42.795660" elapsed="0.118194"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:14:42.913854" elapsed="0.104190"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:14:43.018701" elapsed="0.000463"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:14:29.588889" elapsed="13.430275"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:43.021235" level="INFO">Typing text 'name005' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:14:43.021235" elapsed="0.461043"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:43.482278" level="INFO">Typing text 'email005@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:14:43.482278" elapsed="0.520393"/>
+</kw>
+<arg>name=name005</arg>
+<arg>email=email005@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:14:43.020183" elapsed="0.982488"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:14:45.005196" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:14:44.004687" elapsed="1.000509"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:14:45.005196" elapsed="2.424910"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:14:44.003790" elapsed="3.426316"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:14:29.580192" elapsed="17.849914"/>
+</test>
+<test id="s1-t6" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:14:47.439186" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:14:47.439186" elapsed="12.711891"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:15:00.151077" elapsed="0.141189"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:00.401116" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:15:00.292266" elapsed="0.108850"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:15:00.401116" elapsed="0.102068"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:15:00.503184" elapsed="0.000000"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:14:47.439186" elapsed="13.063998"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:00.504195" level="INFO">Typing text 'name006' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:15:00.504195" elapsed="0.413376"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:00.917571" level="INFO">Typing text 'email006@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:15:00.917571" elapsed="4.611449"/>
+</kw>
+<arg>name=name006</arg>
+<arg>email=email006@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:15:00.504195" elapsed="5.024825"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:15:06.530175" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:15:05.530041" elapsed="1.000134"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:15:06.530175" elapsed="3.044829"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:15:05.530041" elapsed="4.044963"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:14:47.430106" elapsed="22.146237"/>
+</test>
+<test id="s1-t7" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:09.576343" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:15:09.576343" elapsed="13.569889"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:15:23.146232" elapsed="0.144782"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:23.409718" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:15:23.291014" elapsed="0.118704"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:15:23.410238" elapsed="0.102779"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:15:23.513017" elapsed="0.000000"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:15:09.576343" elapsed="13.936674"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:23.515292" level="INFO">Typing text 'name007' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:15:23.514272" elapsed="0.537869"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:24.054169" level="INFO">Typing text 'email007@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:15:24.052141" elapsed="0.564435"/>
+</kw>
+<arg>name=name007</arg>
+<arg>email=email007@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:15:23.514272" elapsed="1.102304"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:15:25.618994" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:15:24.618447" elapsed="1.000547"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:15:25.618994" elapsed="2.412287"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:15:24.617581" elapsed="3.413700"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:15:09.576343" elapsed="18.454938"/>
+</test>
+<test id="s1-t8" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:28.035334" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:15:28.035334" elapsed="12.562797"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:15:40.598131" elapsed="0.150112"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:40.866255" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:15:40.748243" elapsed="0.118012"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:15:40.867265" elapsed="0.103816"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:15:40.971586" elapsed="0.000000"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:15:28.035334" elapsed="12.936252"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:40.973592" level="INFO">Typing text 'name008' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:15:40.972592" elapsed="0.426891"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:41.400900" level="INFO">Typing text 'email008@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:15:41.400336" elapsed="4.603901"/>
+</kw>
+<arg>name=name008</arg>
+<arg>email=email008@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:15:40.972592" elapsed="5.031645"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:15:47.005773" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:15:46.005350" elapsed="1.000423"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:15:47.005773" elapsed="4.495434"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:15:46.005350" elapsed="5.495857"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:15:28.035334" elapsed="23.467447"/>
+</test>
+<test id="s1-t9" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:15:51.505335" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:15:51.505335" elapsed="12.836625"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:16:04.342559" elapsed="0.140852"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:16:04.592356" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:16:04.483411" elapsed="0.108945"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:16:04.592977" elapsed="0.103338"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:16:04.696938" elapsed="0.000000"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:15:51.505335" elapsed="13.191603"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:16:04.699955" level="INFO">Typing text 'name009' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:16:04.699046" elapsed="0.493136"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:16:05.192716" level="INFO">Typing text 'email009@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:16:05.192716" elapsed="0.499756"/>
+</kw>
+<arg>name=name009</arg>
+<arg>email=email009@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:16:04.699046" elapsed="0.993426"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:16:06.692723" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:16:05.692472" elapsed="1.000251"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:16:06.692723" elapsed="2.417535"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:16:05.692472" elapsed="3.417786"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:15:51.505335" elapsed="17.606943"/>
+</test>
+<test id="s1-t10" name="Demo uno Excel using" line="20">
+<kw name="inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:16:09.112825" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T21:16:09.112825" elapsed="12.496097"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T21:16:21.608922" elapsed="0.145771"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:16:21.866206" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T21:16:21.754693" elapsed="0.111513"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T21:16:21.866818" elapsed="0.104549"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T21:16:21.971915" elapsed="0.000544"/>
+</kw>
+<tag>test_uno</tag>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:16:09.112825" elapsed="12.859634"/>
+</kw>
+<kw name="Conectar Excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:16:21.974644" level="INFO">Typing text 'name010' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:16:21.974644" elapsed="0.512332"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T21:16:22.486976" level="INFO">Typing text 'email0010@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T21:16:22.486976" elapsed="4.670757"/>
+</kw>
+<arg>name=name010</arg>
+<arg>email=email0010@gmail.com</arg>
+<doc>Conectando con excel</doc>
+<status status="PASS" start="2024-07-23T21:16:21.973632" elapsed="5.184101"/>
+</kw>
+<kw name="final" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T21:16:28.158926" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T21:16:27.158653" elapsed="1.000273"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-23T21:16:28.158926" elapsed="3.176220"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:16:27.158653" elapsed="4.176493"/>
+</kw>
+<status status="PASS" start="2024-07-23T21:16:09.112825" elapsed="22.222321"/>
+</test>
+<doc>Practica excel uno</doc>
+<status status="PASS" start="2024-07-23T21:13:11.178928" elapsed="200.156218"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Keyword 01">Keyword 01</stat>
+<stat pass="10" fail="0" skip="0" id="s1" name="Excel1">Excel1</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-07-23T21:13:29.428763" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:13:48.220472" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:14:06.638846" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:14:29.580192" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:14:47.430106" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:15:09.576343" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:15:28.035334" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:15:51.505335" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
+<msg time="2024-07-23T21:16:09.112825" level="WARN">Multiple tests with name 'Demo uno Excel using' executed in suite 'Excel1'.</msg>
 </errors>
 </robot>

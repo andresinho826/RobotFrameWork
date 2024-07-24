@@ -1,0 +1,27 @@
+pycharm -> setting -> project:Robotframework -> python interpreter -> robotframework-datadriver
+
+pip install -U robotframework-datadriver[XLS]
+
+pip install robotframework-exceldatadriver
+
+pip3 install robotframework-exceldatadriver
+
+
+---------------------------------INSTALAR LIBRERIA EXCEL MANUALMENTE----------------------------------------------------
+
+1. primero instala esta libreria
+
+pip3 install openpyxl
+es necesario para la de lexcel
+
+2.despues descargate este repo, que es el de excel robotframework https://github.com/peterservice-rnd/robotframework-excellib
+
+ya sea con git o descarga el zip
+
+3. una vez descargado entra a la raiz del proyecto y ejecuta esto
+python setup.py install
+
+y con eso te instalara el proyecto que descargaste
+y con el pip list ya podras ver la libreria instalada en tu universo de python
+
+------------------------------------------------------------------------------------------------------------------------

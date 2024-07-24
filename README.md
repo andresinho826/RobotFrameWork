@@ -178,3 +178,25 @@ robot -d nombre_folder_log_o_reporte .\nombre_clase.robot
 -> keywords
 * realizando ejercicios con respecto a keywords , separar en diferentes directorios dentro de la carpeta resources
 * validando las mejores practicas para que cada vez el codigo sea mas legible y mantenible.
+
+
+17 Julio
+
+-> creando la clase excel1.robot
+-> con esta clase podremos cargar los datos desde un archivo excel
+-> ejecutamos de la siguiente manera
+
+robot -d ../reportes_keyword .\Excel1.robot
+
+
+-> librerias para interactuar con excel
+
+https://pypi.org/project/robotframework-exceldatadriver/
+
+pycharm -> setting -> project:Robotframework -> python interpreter -> robotframework-datadriver
+
+
+step by step -> https://www.youtube.com/watch?v=ZAdqnG65fzA
+ejecutamos este comando en la consola y listo.
+
+pip install -U robotframework-datadriver[XLS]

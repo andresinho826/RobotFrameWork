@@ -1,16 +1,17 @@
 *** Settings ***
-Documentation    Demo de las Varibles
+Documentation    Practica excel uno
 Library     SeleniumLibrary
 
 *** Variables ***
-${url} =     https://qa-automation-practice.netlify.app/radiobuttons
+${url} =     https://demoqa.com/text-box
 ${browser} =     chrome
+#Resource       ../Keywords_1/Funciones.robot
 
 
 
 *** Test Cases ***
 Demo uno
-    [Documentation]    Pruebas de nuestras primeras variables
+    [Documentation]    Practica excel uno
     [Tags]    test_uno
     Open Browser        ${url}        ${browser}
     Maximize Browser Window
@@ -19,5 +20,19 @@ Demo uno
     set selenium speed    .1s
 
 
-    close browser
+
 *** Keywords ***
+inicio
+    [Documentation]    Practica excel uno
+    [Tags]    test_uno
+    Open Browser        ${url}        ${browser}
+    Maximize Browser Window
+    title should be     ToolsQA
+    set selenium implicit wait    10
+    set selenium speed    .1s
+
+
+final
+    Sleep    2
+    Close All Browsers
+    #close browser
