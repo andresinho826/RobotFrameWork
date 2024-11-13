@@ -200,3 +200,13 @@ step by step -> https://www.youtube.com/watch?v=ZAdqnG65fzA
 ejecutamos este comando en la consola y listo.
 
 pip install -U robotframework-datadriver[XLS]
+
+
+
+--------------------------------------- BASES DE DATOS -------------- 12 NOV 24
+
+-> necesitamos instalar 2 librerias ( para este caso estamos trabajando con xampp)
+
+robotframework-databaselibrary
+
+pyMySQL
