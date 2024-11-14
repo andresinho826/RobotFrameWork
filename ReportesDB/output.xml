@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-11-12T22:17:06.084884" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-11-13T22:55:52.871899" rpa="false" schemaversion="5">
 <suite id="s1" name="Database2" source="C:\repo\RobotFrameWork\Tests_case2\Database2.robot">
 <kw name="Connect To Database" owner="DatabaseLibrary" type="SETUP">
-<msg time="2024-11-12T22:17:06.864719" level="INFO">Looking for configuration file: 'resources\db.cfg'</msg>
-<msg time="2024-11-12T22:17:06.864719" level="INFO">Configuration file doesn't exist</msg>
-<msg time="2024-11-12T22:17:06.903737" level="INFO">Connect to DB using : pymysql.connect(db='sistema_dos', user='aaron', passwd=***, host='127.0.0.1', port=3307, charset='utf8mb4')</msg>
+<msg time="2024-11-13T22:55:53.686002" level="INFO">Looking for configuration file: 'resources\db.cfg'</msg>
+<msg time="2024-11-13T22:55:53.686002" level="INFO">Configuration file doesn't exist</msg>
+<msg time="2024-11-13T22:55:53.724996" level="INFO">Connect to DB using : pymysql.connect(db='sistema_dos', user='aaron', passwd=***, host='127.0.0.1', port=3307, charset='utf8mb4')</msg>
 <arg>pymysql</arg>
 <arg>${dbname}</arg>
 <arg>${dbuser}</arg>
@@ -14,48 +14,42 @@
 <doc>Creates a database connection using the DB API 2.0 ``db_module`` and the parameters provided.
 Along with listed commonly used arguments (`db_name`, `db_host` etc.)
 you can set any other DB module specific parameters as key/value pairs.</doc>
-<status status="PASS" start="2024-11-12T22:17:06.864719" elapsed="0.046019"/>
+<status status="PASS" start="2024-11-13T22:55:53.686002" elapsed="0.046003"/>
 </kw>
-<test id="s1-t1" name="Base crear tabla" line="26">
-<kw name="Execute Sql String" owner="DatabaseLibrary">
-<msg time="2024-11-12T22:17:06.911736" level="INFO" html="true">Executing sql:&lt;br&gt;&lt;code style="font-weight: bold;"&gt;CREATE TABLE `personas3` (`id` int(11) NOT NULL,`name` varchar(40) NOT NULL,`ap` varchar(40) NOT NULL);&lt;/code&gt;</msg>
-<msg time="2024-11-12T22:17:06.924739" level="INFO">${crear} = None</msg>
-<var>${crear}</var>
-<arg>CREATE TABLE `personas3` (`id` int(11) NOT NULL,`name` varchar(40) NOT NULL,`ap` varchar(40) NOT NULL);</arg>
-<doc>Executes the ``sql_string`` as a single SQL command.</doc>
-<status status="PASS" start="2024-11-12T22:17:06.911736" elapsed="0.013003"/>
+<test id="s1-t1" name="Base traer todos los campos" line="87">
+<kw name="Query" owner="DatabaseLibrary">
+<msg time="2024-11-13T22:55:53.733006" level="INFO" html="true">Executing sql:&lt;br&gt;&lt;code style="font-weight: bold;"&gt;select * from personas2;&lt;/code&gt;</msg>
+<msg time="2024-11-13T22:55:53.734008" level="INFO" html="true">&lt;div style="max-width: 100%; overflow-x: auto;"&gt;&lt;table style="width: auto; border-collapse: collapse; border: 2px solid rgb(140 140 140)"&gt;&lt;caption style="text-align: left; font-weight: bold; padding: 5px;"&gt;Query returned 5 rows&lt;/caption&gt;&lt;tr&gt;&lt;th scope="col" style="background-color: #d6ecd4; border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;Row&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;id&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;name&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;ap&lt;/th&gt;&lt;/tr&gt;&lt;tr style="background-color: #eee;"&gt;&lt;th scope="row" style="background-color: #d6ecd4;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;0&lt;/th&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;1&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;nata&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;mosquera&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row" style="background-color: #d6ecd4;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;1&lt;/th&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;2&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;aaron&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;moreno&lt;/td&gt;&lt;/tr&gt;&lt;tr style="background-color: #eee;"&gt;&lt;th scope="row" style="background-color: #d6ecd4;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;2&lt;/th&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;3&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;harlen&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;castillo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row" style="background-color: #d6ecd4;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;3&lt;/th&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;4&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;yura&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;mosquera&lt;/td&gt;&lt;/tr&gt;&lt;tr style="background-color: #eee;"&gt;&lt;th scope="row" style="background-color: #d6ecd4;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;4&lt;/th&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;5&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;manu&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;mosquera&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg time="2024-11-13T22:55:53.735005" level="INFO">@{todos} = [ (1, 'nata', 'mosquera') | (2, 'aaron', 'moreno') | (3, 'harlen', 'castillo') | (4, 'yura', 'mosquera') | (5, 'manu', 'mosquera') ]</msg>
+<var>@{todos}</var>
+<arg>select * from personas2;</arg>
+<doc>Runs a query with the ``select_statement`` and returns the result as list of rows.
+The type of row values depends on the database module -
+usually they are tuples or tuple-like objects.</doc>
+<status status="PASS" start="2024-11-13T22:55:53.733006" elapsed="0.001999"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${crear}</arg>
+<arg>many @{todos}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-12T22:17:06.924739" elapsed="0.001102"/>
+<status status="PASS" start="2024-11-13T22:55:53.735005" elapsed="0.001000"/>
 </kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2024-11-12T22:17:06.925841" level="INFO">Argument types are:
-&lt;class 'NoneType'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${crear}</arg>
-<arg>None</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-12T22:17:06.925841" elapsed="0.000000"/>
-</kw>
-<doc>crear una nueva tabla en nuestro sistema</doc>
-<tag>test_crear_tabla</tag>
-<status status="PASS" start="2024-11-12T22:17:06.910738" elapsed="0.016092"/>
+<doc>consulta todos los registros</doc>
+<tag>test_todos</tag>
+<status status="PASS" start="2024-11-13T22:55:53.733006" elapsed="0.002999"/>
 </test>
 <kw name="Disconnect From Database" owner="DatabaseLibrary" type="TEARDOWN">
 <doc>Disconnects from the database.</doc>
-<status status="PASS" start="2024-11-12T22:17:06.927740" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T22:55:53.737004" elapsed="0.000000"/>
 </kw>
 <doc>Practica Bases de Datos Mysql</doc>
-<status status="PASS" start="2024-11-12T22:17:06.091882" elapsed="0.835858"/>
+<status status="PASS" start="2024-11-13T22:55:52.874898" elapsed="0.862106"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">test_crear_tabla</stat>
+<stat pass="1" fail="0" skip="0">test_todos</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Database2">Database2</stat>
