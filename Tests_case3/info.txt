@@ -1,0 +1,7 @@
+-> para ejecutar de forma paralela se deben installar las siguientes librerias
+
+pip install -U robotframework-pabot
+
+pabot --processes 2 [caso]
+
+comando ejecutar:  pabot --processes 6 --outputdir Resultados .\Tests_case3\*.robot

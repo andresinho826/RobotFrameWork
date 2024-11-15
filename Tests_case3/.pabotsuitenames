@@ -1,0 +1,9 @@
+datasources:b369f165b13c5521d8a05e420b4fb6c7f6f8fb4d
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:a5ce4396bceb117e26462f3f0c7ad4ca9578b2d4
+--suite Suites.Practicaparalelo1
+--suite Suites.Practicaparalelo2
+--suite Suites.Practicaparalelo3
+--suite Suites.Practicaparalelo4
+--suite Suites.Practicaparalelo5

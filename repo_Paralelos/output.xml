@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-11-14T16:03:10.604583" rpa="false" schemaversion="5">
+<suite id="s1" name="Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5">
+<suite id="s1-s1" name="Practicaparalelo1" source="C:\repo\RobotFrameWork\Tests_case3\Practicaparalelo1.robot">
+<test id="s1-s1-t1" name="Practica uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:03:11.915759" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T16:03:11.915759" elapsed="33.035302"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T16:03:44.952062" elapsed="0.046542"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:03:49.998778" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:03:44.998604" elapsed="5.000174"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:03:49.999788" level="INFO">Typing text 'Andres' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:03:49.998778" elapsed="0.154138"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:03:50.153912" level="INFO">Typing text 'andres123@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:03:50.152916" elapsed="0.131192"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:03:50.285107" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>direccion uno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:03:50.284108" elapsed="0.099330"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:03:50.383438" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>direccion dos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:03:50.383438" elapsed="0.101285"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:03:50.486722" level="INFO">Executing JavaScript:
+window.scrollTo(0,600)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-14T16:03:50.485725" elapsed="0.011576"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:03:53.497771" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:03:50.497301" elapsed="3.000470"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:03:53.498381" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:03:53.498381" elapsed="0.079254"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:03:58.578313" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:03:53.577635" elapsed="5.000678"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T16:03:58.579384" elapsed="2.407427"/>
+</kw>
+<doc>primera prueba del sistema</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2024-11-14T16:03:11.914749" elapsed="49.073101"/>
+</test>
+<doc>Proyecto de pruebas robotframework</doc>
+<status status="PASS" start="2024-11-14T16:03:10.691803" elapsed="50.297968"/>
+</suite>
+<suite id="s1-s2" name="Practicaparalelo2" source="C:\repo\RobotFrameWork\Tests_case3\Practicaparalelo2.robot">
+<test id="s1-s2-t1" name="Practica uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:01.006801" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T16:04:01.005767" elapsed="15.065985"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T16:04:16.073752" elapsed="0.049698"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:04:21.125738" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:04:16.125453" elapsed="5.000790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:21.126748" level="INFO">Typing text 'Andres' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:04:21.126748" elapsed="0.104031"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:21.231784" level="INFO">Typing text 'andres123@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:04:21.230779" elapsed="0.104797"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:21.336575" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>direccion uno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:04:21.336575" elapsed="0.086007"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:21.423582" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>direccion dos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:04:21.423582" elapsed="0.094114"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:21.518695" level="INFO">Executing JavaScript:
+window.scrollTo(0,600)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-14T16:04:21.517696" elapsed="0.003996"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:04:24.522967" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:04:21.522694" elapsed="3.000273"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:24.524213" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:04:24.524213" elapsed="0.098096"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:04:29.623907" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:04:24.623308" elapsed="5.000599"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T16:04:29.625942" elapsed="2.412139"/>
+</kw>
+<doc>primera prueba del sistema</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2024-11-14T16:04:01.005767" elapsed="31.032314"/>
+</test>
+<doc>Proyecto de pruebas robotframework</doc>
+<status status="PASS" start="2024-11-14T16:04:00.992777" elapsed="31.046776"/>
+</suite>
+<suite id="s1-s3" name="Practicaparalelo3" source="C:\repo\RobotFrameWork\Tests_case3\Practicaparalelo3.robot">
+<test id="s1-s3-t1" name="Practica uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:04:32.050481" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T16:04:32.050481" elapsed="54.744611"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T16:05:26.797104" elapsed="0.106384"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:05:31.904636" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:05:26.904487" elapsed="5.000149"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:05:31.904636" level="INFO">Typing text 'Andres' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:05:31.904636" elapsed="0.142308"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:05:32.048023" level="INFO">Typing text 'andres123@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:05:32.046944" elapsed="0.109507"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:05:32.157935" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>direccion uno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:05:32.156451" elapsed="0.091551"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:05:32.249001" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>direccion dos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:05:32.249001" elapsed="0.091239"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:05:32.341239" level="INFO">Executing JavaScript:
+window.scrollTo(0,600)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-14T16:05:32.340240" elapsed="0.008070"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:05:35.348714" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:05:32.348310" elapsed="3.000404"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:05:35.351309" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:05:35.350712" elapsed="0.164149"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:05:40.515111" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:05:35.514861" elapsed="5.000250"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T16:05:40.516155" elapsed="2.341933"/>
+</kw>
+<doc>primera prueba del sistema</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2024-11-14T16:04:32.049076" elapsed="70.812013"/>
+</test>
+<doc>Proyecto de pruebas robotframework</doc>
+<status status="PASS" start="2024-11-14T16:04:32.040559" elapsed="70.822518"/>
+</suite>
+<suite id="s1-s4" name="Practicaparalelo4" source="C:\repo\RobotFrameWork\Tests_case3\Practicaparalelo4.robot">
+<test id="s1-s4-t1" name="Practica uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:05:42.871141" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T16:05:42.871141" elapsed="21.720626"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T16:06:04.593116" elapsed="0.040460"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:06:09.635168" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:06:04.634577" elapsed="5.000591"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:09.635168" level="INFO">Typing text 'Andres' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:09.635168" elapsed="0.134637"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:09.770960" level="INFO">Typing text 'andres123@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:09.770960" elapsed="0.094905"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:09.866865" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>direccion uno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:09.866865" elapsed="0.086593"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:09.953458" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>direccion dos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:09.953458" elapsed="0.073461"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:10.027926" level="INFO">Executing JavaScript:
+window.scrollTo(0,600)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-14T16:06:10.026919" elapsed="0.006003"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:06:13.033075" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:06:10.032922" elapsed="3.000153"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:13.034614" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:13.034614" elapsed="0.121813"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:06:18.157570" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:06:13.157429" elapsed="5.000141"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T16:06:18.158076" elapsed="3.736225"/>
+</kw>
+<doc>primera prueba del sistema</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2024-11-14T16:05:42.870170" elapsed="39.026041"/>
+</test>
+<doc>Proyecto de pruebas robotframework</doc>
+<status status="PASS" start="2024-11-14T16:05:42.865135" elapsed="39.032072"/>
+</suite>
+<suite id="s1-s5" name="Practicaparalelo5" source="C:\repo\RobotFrameWork\Tests_case3\Practicaparalelo5.robot">
+<test id="s1-s5-t1" name="Practica uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:21.908214" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T16:06:21.908214" elapsed="29.550805"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T16:06:51.460021" elapsed="0.037891"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:06:56.499124" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:06:51.498918" elapsed="5.000206"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:56.499124" level="INFO">Typing text 'Andres' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:56.499124" elapsed="0.149471"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:56.649602" level="INFO">Typing text 'andres123@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:56.649602" elapsed="0.108124"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:56.758234" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>direccion uno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:56.758234" elapsed="0.109125"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:56.868377" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>direccion dos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:56.868377" elapsed="0.088472"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:56.958357" level="INFO">Executing JavaScript:
+window.scrollTo(0,600)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-14T16:06:56.956849" elapsed="0.007517"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:06:59.964795" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:06:56.964366" elapsed="3.001032"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T16:06:59.967502" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T16:06:59.966450" elapsed="0.143161"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T16:07:05.111087" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T16:07:00.110614" elapsed="5.000473"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T16:07:05.112106" elapsed="2.368939"/>
+</kw>
+<doc>primera prueba del sistema</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2024-11-14T16:06:21.907219" elapsed="45.574823"/>
+</test>
+<doc>Proyecto de pruebas robotframework</doc>
+<status status="PASS" start="2024-11-14T16:06:21.900219" elapsed="45.583827"/>
+</suite>
+<status status="PASS" start="2024-11-14T16:03:10.609100" elapsed="236.877946"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="5" fail="0" skip="0">test_uno</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5">Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Practicaparalelo1">Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5.Practicaparalelo1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Practicaparalelo2">Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5.Practicaparalelo2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Practicaparalelo3">Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5.Practicaparalelo3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Practicaparalelo4">Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5.Practicaparalelo4</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="Practicaparalelo5">Practicaparalelo1 &amp; Practicaparalelo2 &amp; Practicaparalelo3 &amp; Practicaparalelo4 &amp; Practicaparalelo5.Practicaparalelo5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

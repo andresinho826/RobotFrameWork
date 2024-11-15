@@ -210,3 +210,33 @@ pip install -U robotframework-datadriver[XLS]
 robotframework-databaselibrary
 
 pyMySQL
+
+
+--------------------------------------- CORRER TEST EN PARALERO -------------- 14 NOV 24
+
+-> Si deseo correo diferentes test cases con el nombre similar le agrego el asterisco(*)
+
+ejemplo: robot -d ..\Reportes  Keyw*.robot
+resultado: deberia ejecutar todos los test que inicialicen con key...
+
+
+-> para ejecutar de forma paralela se deben installar las siguientes librerias
+https://pypi.org/project/robotframework-pabot/
+
+pip install -U robotframework-pabot
+
+pabot --processes 2 [caso]
+
+comando resultados:  pabot --processes 6 --outputdir Resultados .\Tests_case3\*.robot
+
+ejecutar este comando= pabot --processes 5 --outputdir Resultados Pract*.robot
+
+Explicacion:
+-> pabot = esto le dice al sistema que se va a ejecutar en paralelo
+-> --processes #(5) = la cantidad de procesos que vamos a ejecutar en paralelo para este ejemplo son 5
+-> --outputdir = en el folder resultados, vamos a poder visualizar el resultado de la ejecucion
+-> Prac*.robot = todos los test que van a ser ejecutados en paralelo
+
+
+NOTA: La paralelizacion nos dice que vamos a poder correr varios archivos al tiempo, no cuantas veces, 
+      sino cuantos archivos vamos a corre al tiempo.
