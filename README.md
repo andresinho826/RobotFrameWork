@@ -240,3 +240,27 @@ Explicacion:
 
 NOTA: La paralelizacion nos dice que vamos a poder correr varios archivos al tiempo, no cuantas veces, 
       sino cuantos archivos vamos a corre al tiempo.
+
+
+
+
+
+--------------------------------------- API TESTING ROBOTFRAMEWORK -------------- 15 y 19 NOV 24
+
+sitio web: https://reqres.in/
+sitio web: https://reqres.in/api-docs/#/default/get_users__id_
+
+installar librerias
+
+- requests
+- robotframework-request
+- robotframework-jsonlibrary
+
+pip install requests
+pip install robotframework-requests
+pip install robotframework-jsonlibrary
+pip install jsonpath_rw
+pip install jsonpath_rw_ext
+
+
+
